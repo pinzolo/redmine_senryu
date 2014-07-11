@@ -1,1 +1,8 @@
 <h2>SenryusController#index</h2>
+
+<%= link_to l('button_create'), new_project_senryu_path(@project) %>
+<ul>
+<% @senryus.each do |senryu| %>
+  <li><%= senryu.first_part %>&nbsp;<%= senryu.second_part %>&nbsp;<%= senryu.last_part %></li>
+<% end %>
+</ul>

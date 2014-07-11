@@ -1,1 +1,7 @@
 <h2>SenryusController#new</h2>
+<%= labelled_form_for @senryu, url: project_senryus_path(@project) do |f| %>
+  <div><%= f.text_field :first_part, label: "#{l('label_senryu_first_part')}: " %></div>
+<div><%= f.text_field :second_part, label: "#{l('label_senryu_second_part')}: " %></div>
+<div><%= f.text_field :last_part, label: "#{l('label_senryu_last_part')}: " %></div>
+  <%= f.submit l('button_create') %>
+<% end %>
