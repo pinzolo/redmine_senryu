@@ -12,7 +12,7 @@ class SenryusController < ApplicationController
   end
 
   def create
-    @senryu = Senryu.new(params[:senryu])
+    @senryu = Senryu.new(params[:senryu].merge(project_id: @project.id))
     @senryu.save
     redirect_to project_senryus_path(@project)
   end
