@@ -3,6 +3,6 @@
 <%= link_to l('button_create'), new_project_senryu_path(@project) %>
 <ul>
 <% @senryus.each do |senryu| %>
-  <li><%= senryu.first_part %>&nbsp;<%= senryu.second_part %>&nbsp;<%= senryu.last_part %></li>
+  <li><%= senryu.first_part %>&nbsp;<%= senryu.second_part %>&nbsp;<%= senryu.last_part %>&nbsp;<%= link_to l('label_details'), project_senryu_path(@project, senryu) %></li>
 <% end %>
 </ul>

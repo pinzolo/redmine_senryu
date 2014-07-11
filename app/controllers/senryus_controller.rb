@@ -7,6 +7,10 @@ class SenryusController < ApplicationController
     @senryus = Senryu.all
   end
 
+  def show
+    @senryu = Senryu.find(params[:id])
+  end
+
   def new
     @senryu = Senryu.new
   end
