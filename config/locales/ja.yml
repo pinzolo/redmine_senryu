@@ -1,7 +1,7 @@
 ja:
   project_module_senryu: 川柳
-  permission_view_senryu: 川柳閲覧
-  permission_manage_senryu: 川柳作成
+  permission_view_senryus: 川柳閲覧
+  permission_manage_senryus: 川柳作成
   label_senryu_first_part: 上の句
   label_senryu_second_part: 中の句
   label_senryu_last_part: 下の句
