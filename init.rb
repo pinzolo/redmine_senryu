@@ -7,8 +7,12 @@ Redmine::Plugin.register :redmine_senryu do
   author_url 'http://example.com/about'
 
   project_module :senryu do
-    permission :view_senryu, senryus: [:index, :show]
-    permission :manage_senryu, senryus: [:new, :create]
+    permission :view_senryus, senryus: [:index, :show]
+    permission :manage_senryus, senryus: [:new, :create]
   end
   menu :project_menu, :senryu, { controller: :senryus, action: :index }, param: :project_id, caption: :project_module_senryu
+end
+
+Redmine::Search.map do |search|
+  search.register :senryus
 end
